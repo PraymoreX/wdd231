@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page for Praymore Tettey Omeni">
+    <meta name="author" content="Praymore Tettey Omeni">
+    <title>WDD 231 | Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <div class="logo-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-globe" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+            </svg>
+            <span>Praymore Tettey Omeni</span>
+        </div>
+
+        <button id="menu" aria-label="Menu"></button>
+    </div>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Home</h1>
+    <div class="main-grid">
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                I am Praymore Tettey Omeni from Kumasi, Ghana. I am passionate about frontend development, 
+                medicine, and technology, and I enjoy exploring how these fields can work together to solve 
+                real-world problems. I have a strong interest in building modern, responsive, and user-friendly 
+                websites, and I am constantly learning new tools and techniques in web development. I enjoy turning 
+                ideas into functional digital experiences using HTML, CSS, and JavaScript, while improving my 
+                understanding of UI and UX design. Alongside my interest in technology, I am also driven by a deep 
+                curiosity for medicine and human health, which motivates me to explore how technology can improve 
+                healthcare systems and patient experiences in the future. I am committed to continuous learning, 
+                problem-solving, and building projects that challenge my skills and help me grow as a developer and 
+                future professional in both tech and health fields.
+            </p>
+        </section>
+
+        <section class="card photo-card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpeg" alt="Praymore Tettey Omeni">
+        </section>
+
+    </div>
+
+    <section class="courses-section">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="buttons">
+            <button id="all">All</button>
+            <button id="wdd">WDD</button>
+            <button id="cse">CSE</button>
+        </div>
+
+        <div id="courses"></div>
+
+        <p id="credits"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="socials">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Twitter">X</a>
+    </div>
+    <p>
+        &copy; <span id="currentyear"></span>
+        Praymore Tettey Omeni | Kumasi, Ghana
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
