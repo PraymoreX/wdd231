@@ -1,0 +1,6 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#0f172a"></rect>
+  <circle cx="60" cy="60" r="28" fill="none" stroke="#38bdf8" stroke-width="4"></circle>
+  <path d="M40 60 H80" stroke="#38bdf8" stroke-width="3"></path>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">ATS</text>
+</svg>

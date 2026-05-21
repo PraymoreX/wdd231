@@ -1,0 +1,6 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#064e3b"></rect>
+  <rect x="50" y="25" width="20" height="70" fill="#facc15"></rect>
+  <rect x="25" y="50" width="70" height="20" fill="#facc15"></rect>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">Care+</text>
+</svg>

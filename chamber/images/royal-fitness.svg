@@ -1,0 +1,7 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#0b0f19"></rect>
+  <rect x="35" y="55" width="50" height="10" fill="#ef4444"></rect>
+  <rect x="20" y="50" width="10" height="20" fill="#ef4444"></rect>
+  <rect x="90" y="50" width="10" height="20" fill="#ef4444"></rect>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">Royal Fit</text>
+</svg>

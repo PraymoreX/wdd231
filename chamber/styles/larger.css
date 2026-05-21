@@ -1,0 +1,148 @@
+@media screen and (min-width: 640px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: inline;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header{
+        background-color: var(--body-bg-color);
+        color: var(--completed-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        top: auto;
+        left: auto;
+    
+}
+
+    .hero-text {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    color: white;
+    }
+
+    .search-bar {
+        width: 250px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 10px;
+    }
+
+    .search-btn {
+        padding: 5px 7px;
+        border: none;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+    .categories {
+        width:170px;
+        display: flex;
+        flex-direction: row;
+        gap: 0.3rem;
+    }
+
+    .categories label {
+        font-size: 12px;
+        color: var(--completed-color);
+    }
+
+    #clear-btn{
+        width: 120px;
+        padding: 0.5rem 1.5rem;
+        font-size: 12px;
+    }
+
+    .search form, select{
+        width: 150px;
+}
+
+    #grid-btn, #list-btn, select{
+        padding: 0.5rem 0.5rem;
+        font-size: 12px;
+    }
+
+    .search form{
+        display: flex;
+    }
+
+    select{
+        padding: 0.4rem 1rem;
+        font-size: 12px; 
+    }
+
+    .list-view .card:nth-child(odd) {
+    background-color: lightgray;
+    }
+
+    .list-view .card:nth-child(even) {
+        background-color: white;
+    }
+
+    .extra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .extra *{
+        padding: 0.5rem;
+    }
+
+    .grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .list-view {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .grid-view .card{
+        height: auto;
+        padding: 1rem;
+        border: 1px solid rgb(60, 24, 145);
+        border-radius: 10px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .grid-view .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+     .list-view .card *{
+        width: 15%;
+    }
+
+     .card p, .card h2{
+        color: rgb(26, 26, 72);
+        font-size: 13px;
+    }
+
+    .list-view .card{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 1rem;
+    }
+
+}

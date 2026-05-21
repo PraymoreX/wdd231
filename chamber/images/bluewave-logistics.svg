@@ -1,0 +1,6 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#0c4a6e"></rect>
+  <path d="M20 70 Q60 20 100 70" stroke="#38bdf8" stroke-width="4" fill="none"></path>
+  <path d="M20 80 Q60 30 100 80" stroke="#0ea5e9" stroke-width="3" fill="none"></path>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">BlueWave</text>
+</svg>

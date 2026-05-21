@@ -1,0 +1,6 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#0f0f0f"></rect>
+  <path d="M40 80 Q60 20 80 80" stroke="#f472b6" stroke-width="4" fill="none"></path>
+  <circle cx="60" cy="50" r="8" fill="#f9a8d4"></circle>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">Elite</text>
+</svg>

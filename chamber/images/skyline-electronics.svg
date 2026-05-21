@@ -1,0 +1,6 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#111827"></rect>
+  <path d="M20 80 L60 30 L100 80 Z" fill="#60a5fa"></path>
+  <circle cx="60" cy="70" r="10" fill="#93c5fd"></circle>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">Skyline</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#1e3a8a"></rect>
+  <path d="M30 70 L60 30 L90 70 Z" fill="#fbbf24"></path>
+  <circle cx="60" cy="75" r="10" fill="#fde68a"></circle>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">BFA</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#052e16"></rect>
+  <path d="M60 30 C40 50, 40 80, 60 90 C80 80, 80 50, 60 30Z" fill="#22c55e"></path>
+  <line x1="60" y1="30" x2="60" y2="90" stroke="#86efac"></line>
+  <text x="60" y="105" text-anchor="middle" fill="white" font-size="10">Harvest</text>
+</svg>

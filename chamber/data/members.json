@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Ashanti Tech Solutions",
+    "category": "Technology",
+    "address": "12 Adum Street, Kumasi, Ghana",
+    "phone": "+233 24 123 4567",
+    "website": "https://www.ashantitech.com",
+    "image": "images/ashanti-tech-solutions.svg",
+    "membership": 3,
+    "description": "Software development company providing web and mobile applications.",
+    "email": "info@ashantitech.com"
+  },
+  {
+    "name": "Skyline Electronics",
+    "category": "Technology",
+    "address": "50 Tech Avenue, Tema, Ghana",
+    "phone": "+233 57 654 7788",
+    "website": "https://www.skylineelectronics.com",
+    "image": "images/skyline-electronics.svg",
+    "membership": 2,
+    "description": "Retail electronics store selling gadgets and appliances.",
+    "email": "service@skylineelectronics.com"
+  },
+  {
+    "name": "Golden Care Pharmacy",
+    "category": "Healthcare",
+    "address": "45 Bantama Road, Kumasi, Ghana",
+    "phone": "+233 20 987 6543",
+    "website": "https://www.goldencarepharmacy.com",
+    "image": "images/golden-care.svg",
+    "membership": 2,
+    "description": "Community pharmacy offering prescription drugs and health products.",
+    "email": "support@goldencarepharmacy.com"
+  },
+  {
+    "name": "Bright Future Academy",
+    "category": "Education",
+    "address": "8 Lake Road, Accra, Ghana",
+    "phone": "+233 55 444 1122",
+    "website": "https://www.brightfutureacademy.com",
+    "image": "images/bright-future-academy.svg",
+    "membership": 1,
+    "description": "Private school offering primary and secondary education.",
+    "email": "contact@brightfutureacademy.com"
+  },
+  {
+    "name": "Royal Fitness Center",
+    "category": "Fitness",
+    "address": "20 Stadium Avenue, Kumasi, Ghana",
+    "phone": "+233 27 888 3344",
+    "website": "https://www.royalfitness.com",
+    "image": "images/royal-fitness.svg",
+    "membership": 2,
+    "description": "Gym and wellness center offering training programs.",
+    "email": "hello@royalfitness.com"
+  },
+  {
+    "name": "Elite Fashion House",
+    "category": "Fashion",
+    "address": "33 Oxford Street, Accra, Ghana",
+    "phone": "+233 54 321 9988",
+    "website": "https://www.elitefashionhouse.com",
+    "image": "images/elite-fashion-house.svg",
+    "membership": 3,
+    "description": "Clothing and fashion design brand specializing in modern wear.",
+    "email": "info@elitefashionhouse.com"
+  },
+  {
+    "name": "Green Harvest Farms",
+    "category": "Agriculture",
+    "address": "17 Farm Lane, Sunyani, Ghana",
+    "phone": "+233 26 765 2211",
+    "website": "https://www.greenharvestfarms.com",
+    "image": "images/green-harvest-farms.svg",
+    "membership": 1,
+    "description": "Organic farming company producing fresh agricultural products.",
+    "email": "sales@greenharvestfarms.com"
+  },
+  {
+    "name": "BlueWave Logistics",
+    "category": "Logistics",
+    "address": "15 Harbor Road, Takoradi, Ghana",
+    "phone": "+233 59 112 3344",
+    "website": "https://www.bluewavelogistics.com",
+    "image": "images/bluewave-logistics.svg",
+    "description": "Cargo and delivery services company.",
+    "email": "contact@bluewavelogistics.com"
+  }
+]
