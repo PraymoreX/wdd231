@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 
     #menu {
         display: none;
@@ -20,12 +20,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: static;
         top: auto;
         left: auto;
-    
-}
 
+    
+    }
+
+
+    /* DIRECTORY PAGE */
     .hero-text {
     position: absolute;
     bottom: 50px;
@@ -142,6 +144,29 @@
         gap: 15px;
         align-items: center;
         padding: 1rem;
+    }
+
+    /*Home page*/
+
+    .home .hero .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home .hero .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .home .info-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 2rem;
+    }
+
+    .home .spotlights {
+        padding: 3rem 2rem 5rem;
+    }
+
+    .home .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }

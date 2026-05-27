@@ -6,7 +6,7 @@
     "phone": "+233 24 123 4567",
     "website": "https://www.ashantitech.com",
     "image": "images/ashanti-tech-solutions.svg",
-    "membership": 3,
+    "membership": "Gold",
     "description": "Software development company providing web and mobile applications.",
     "email": "info@ashantitech.com"
   },
@@ -17,7 +17,7 @@
     "phone": "+233 57 654 7788",
     "website": "https://www.skylineelectronics.com",
     "image": "images/skyline-electronics.svg",
-    "membership": 2,
+    "membership": "Silver",
     "description": "Retail electronics store selling gadgets and appliances.",
     "email": "service@skylineelectronics.com"
   },
@@ -28,7 +28,7 @@
     "phone": "+233 20 987 6543",
     "website": "https://www.goldencarepharmacy.com",
     "image": "images/golden-care.svg",
-    "membership": 2,
+    "membership": "Silver",
     "description": "Community pharmacy offering prescription drugs and health products.",
     "email": "support@goldencarepharmacy.com"
   },
@@ -39,7 +39,7 @@
     "phone": "+233 55 444 1122",
     "website": "https://www.brightfutureacademy.com",
     "image": "images/bright-future-academy.svg",
-    "membership": 1,
+    "membership": "Member",
     "description": "Private school offering primary and secondary education.",
     "email": "contact@brightfutureacademy.com"
   },
@@ -50,7 +50,7 @@
     "phone": "+233 27 888 3344",
     "website": "https://www.royalfitness.com",
     "image": "images/royal-fitness.svg",
-    "membership": 2,
+    "membership": "Silver",
     "description": "Gym and wellness center offering training programs.",
     "email": "hello@royalfitness.com"
   },
@@ -61,7 +61,7 @@
     "phone": "+233 54 321 9988",
     "website": "https://www.elitefashionhouse.com",
     "image": "images/elite-fashion-house.svg",
-    "membership": 3,
+    "membership": "Gold",
     "description": "Clothing and fashion design brand specializing in modern wear.",
     "email": "info@elitefashionhouse.com"
   },
@@ -72,7 +72,7 @@
     "phone": "+233 26 765 2211",
     "website": "https://www.greenharvestfarms.com",
     "image": "images/green-harvest-farms.svg",
-    "membership": 1,
+    "membership": "Member",
     "description": "Organic farming company producing fresh agricultural products.",
     "email": "sales@greenharvestfarms.com"
   },
@@ -84,6 +84,7 @@
     "website": "https://www.bluewavelogistics.com",
     "image": "images/bluewave-logistics.svg",
     "description": "Cargo and delivery services company.",
+    "membership": "Silver",
     "email": "contact@bluewavelogistics.com"
   }
 ]
