@@ -169,4 +169,24 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /*Join*/
+    .hero-content {
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .benefits,
+    .memberships,
+    .join-form-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .form-container {
+        padding: 2rem;
+    }
+
 }
