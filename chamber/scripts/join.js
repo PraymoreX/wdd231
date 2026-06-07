@@ -23,178 +23,59 @@ function updateFooter(){
     return
 }
 
-const timestampField = document.querySelector("#timestamp");
-
-if (timestampField) {
-    timestampField.value = new Date().toISOString();
-}
-
-const modalButtons = document.querySelectorAll(".learn-more");
-const closeButtons = document.querySelectorAll(".close");
-
-modalButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        const modalId = button.dataset.modal;
-
-        const modal = document.getElementById(modalId);
-
-        if (modal) {
-            modal.style.display = "flex";
-        }
-
-    });
-
-});
+document.addEventListener("DOMContentLoaded", () => {
 
 
-closeButtons.forEach(button => {
+    const timestampField = document.getElementById("timestamp");
 
-    button.addEventListener("click", () => {
-
-        const modal = button.closest(".modal");
-
-        modal.style.display = "none";
-
-    });
-
-});
-
-window.addEventListener("click", (event) => {
-
-    document.querySelectorAll(".modal").forEach(modal => {
-
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-
-    });
-
-});
-
-document.addEventListener("keydown", (event) => {
-
-    if (event.key === "Escape") {
-
-        document.querySelectorAll(".modal").forEach(modal => {
-            modal.style.display = "none";
-        });
-
+    if (timestampField) {
+        const now = new Date();
+        timestampField.value = now.toISOString();
     }
 
-});
+    const modalButtons = document.querySelectorAll(".join-page-modal-btn");
+    const closeButtons = document.querySelectorAll(".close-modal");
 
-const heroButton = document.querySelector(".hero-btn");
+    modalButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const modalId = btn.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
 
-if (heroButton) {
-
-    heroButton.addEventListener("click", (event) => {
-
-        event.preventDefault();
-
-        const target = document.querySelector("#membership-section");
-
-        target.scrollIntoView({
-            behavior: "smooth"
-        });
-
-    });
-
-}
-
-const membershipCards =
-    document.querySelectorAll(".membership-card");
-
-membershipCards.forEach((card, index) => {
-
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
-
-    setTimeout(() => {
-
-        card.style.transition =
-            "all 0.6s ease";
-
-        card.style.opacity = "1";
-        card.style.transform =
-            "translateY(0)";
-
-    }, index * 200);
-
-});
-
-const benefitCards =
-    document.querySelectorAll(".benefit-card");
-
-benefitCards.forEach((card, index) => {
-
-    card.style.opacity = "0";
-    card.style.transform =
-        "translateY(30px)";
-
-    setTimeout(() => {
-
-        card.style.transition =
-            "all .6s ease";
-
-        card.style.opacity = "1";
-        card.style.transform =
-            "translateY(0)";
-
-    }, 500 + (index * 150));
-
-});
-
-const fadeElements = document.querySelectorAll(
-    ".benefit-card, .membership-card, .form-container"
-);
-
-const observer = new IntersectionObserver(
-    (entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add(
-                    "visible"
-                );
-
+            if (modal) {
+                modal.showModal();
             }
-
         });
+    });
 
-    },
-    {
-        threshold: 0.15
-    }
-);
+    closeButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const modal = btn.closest("dialog");
 
-fadeElements.forEach(element => {
-    observer.observe(element);
+            if (modal) {
+                modal.close();
+            }
+        });
+    });
+
+    const dialogs = document.querySelectorAll("dialog");
+
+    dialogs.forEach((dialog) => {
+        dialog.addEventListener("click", (e) => {
+            const rect = dialog.getBoundingClientRect();
+
+            const isClickOutside =
+                e.clientX < rect.left ||
+                e.clientX > rect.right ||
+                e.clientY < rect.top ||
+                e.clientY > rect.bottom;
+
+            if (isClickOutside) {
+                dialog.close();
+            }
+        });
+    });
+
 });
-
-const joinForm =
-    document.querySelector("form");
-
-if (joinForm) {
-
-    joinForm.addEventListener("submit",
-        () => {
-
-            const submitButton =
-                joinForm.querySelector(
-                    "button[type='submit']"
-                );
-
-            submitButton.textContent =
-                "Submitting...";
-
-        }
-    );
-
-}
 
 updateFooter()
 menuBtn.addEventListener("click", handleMenuBtn)

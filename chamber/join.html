@@ -45,258 +45,320 @@
         </div>
     </header>
 
-    <section class="join-hero">
+    <main class="join-page">
+        <section class="join-page-hero">
 
-        <div class="hero-overlay">
+            <div class="join-page-hero-content">
 
-            <div class="hero-content">
-
-                <span class="hero-tag">
-                    Join Kumasi Chamber of Commerce
+                <span class="join-page-tag">
+                    Membership Application
                 </span>
 
-                <h1>
-                    Grow Your Business
-                    <span>Together With Us</span>
-                </h1>
+                <h1>Join the Kumasi Chamber of Commerce</h1>
 
                 <p>
-                    Connect with local businesses, gain visibility,
-                    access networking opportunities, and become part
-                    of Kumasi's thriving business community.
+                    Become part of a growing network of businesses,
+                    entrepreneurs, and organizations working together
+                    to strengthen commerce and economic development in Kumasi.
                 </p>
 
-                <a href="#membership-section" class="hero-btn">
-                    View Membership Plans
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            </div>
+
+        </section>
+
+        <section class="join-page-content">
+
+            <div class="join-page-form-container">
+
+                <h2>Membership Application Form</h2>
+
+                <form
+                    method="get"
+                    action="thankyou.html"
+                    class="join-page-membership-form"
+                >
+
+                    <label>
+                        First Name
+
+                        <input
+                            type="text"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Last Name
+
+                        <input
+                            type="text"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Organizational Title
+
+                        <input
+                            type="text"
+                            name="organizationTitle"
+                            title="Your title within the organization"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s\-]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address
+
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@company.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Membership Level
+
+                        <select
+                            name="membership"
+                            title="Select membership level"
+                        >
+                            <option value="np">
+                                NP Membership
+                            </option>
+
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+                        </select>
+
+                    </label>
+
+                    <label>
+                        Business Description
+
+                        <textarea
+                            name="description"
+                            title="Describe your organization"
+                            rows="5"
+                        ></textarea>
+
+                    </label>
+
+                    <input
+                        type="hidden"
+                        id="timestamp"
+                        name="timestamp"
+                    >
+
+                    <input
+                        type="submit"
+                        value="Submit Membership Application"
+                        class="join-page-submit-btn"
+                    >
+
+                </form>
 
             </div>
 
-        </div>
+            <aside class="join-page-membership-cards">
 
-    </section>
+                <div class="join-page-membership-card card-one">
 
-    <section class="benefits">
+                    <h3>NP Membership</h3>
 
-        <h2>Why Join The Chamber?</h2>
+                    <p>
+                        Designed for nonprofit organizations.
+                        Includes networking opportunities and
+                        chamber participation.
+                    </p>
 
-        <div class="benefits-grid">
+                    <button
+                        type="button"
+                        class="join-page-modal-btn"
+                        data-modal="npModal"
+                    >
+                        Learn More
+                    </button>
 
-            <div class="benefit-card">
-                <i class="fa-solid fa-handshake"></i>
-                <h3>Networking</h3>
-                <p>Connect with entrepreneurs and industry leaders.</p>
-            </div>
+                </div>
 
-            <div class="benefit-card">
-                <i class="fa-solid fa-chart-line"></i>
-                <h3>Business Growth</h3>
-                <p>Increase visibility and attract more customers.</p>
-            </div>
+                <div class="join-page-membership-card card-two">
 
-            <div class="benefit-card">
-                <i class="fa-solid fa-users"></i>
-                <h3>Community</h3>
-                <p>Become part of Kumasi's business ecosystem.</p>
-            </div>
+                    <h3>Bronze Membership</h3>
 
-            <div class="benefit-card">
-                <i class="fa-solid fa-award"></i>
-                <h3>Recognition</h3>
-                <p>Showcase your business to a wider audience.</p>
-            </div>
+                    <p>
+                        Great for small businesses looking to
+                        establish a presence and connect with
+                        the local business community.
+                    </p>
 
-        </div>
+                    <button
+                        type="button"
+                        class="join-page-modal-btn"
+                        data-modal="bronzeModal"
+                    >
+                        Learn More
+                    </button>
 
-    </section>
+                </div>
 
-    <section id="membership-section" class="memberships">
+                <div class="join-page-membership-card card-three">
 
-        <h2>Membership Levels</h2>
+                    <h3>Silver Membership</h3>
 
-        <div class="membership-grid">
+                    <p>
+                        Includes additional promotional
+                        opportunities, training events,
+                        and business exposure.
+                    </p>
 
-            <div class="membership-card">
-                <h3>NP Membership</h3>
-                <p class="price">Free</p>
+                    <button
+                        type="button"
+                        class="join-page-modal-btn"
+                        data-modal="silverModal"
+                    >
+                        Learn More
+                    </button>
 
-                <ul>
-                    <li>Business Directory Listing</li>
-                    <li>Networking Events</li>
-                    <li>Community Updates</li>
-                </ul>
+                </div>
 
-                <button class="learn-more"
-                    data-modal="np-modal">
-                    Learn More
-                </button>
-            </div>
+                <div class="join-page-membership-card card-four">
 
-            <div class="membership-card">
-                <h3>Bronze Membership</h3>
-                <p class="price">$100 / Year</p>
+                    <h3>Gold Membership</h3>
 
-                <ul>
-                    <li>Everything in NP</li>
-                    <li>Training Programs</li>
-                    <li>Business Workshops</li>
-                </ul>
+                    <p>
+                        Premium membership with enhanced
+                        visibility, sponsorship opportunities,
+                        and priority benefits.
+                    </p>
 
-                <button class="learn-more"
-                    data-modal="bronze-modal">
-                    Learn More
-                </button>
-            </div>
+                    <button
+                        type="button"
+                        class="join-page-modal-btn"
+                        data-modal="goldModal"
+                    >
+                        Learn More
+                    </button>
 
-            <div class="membership-card featured">
-                <h3>Silver Membership</h3>
-                <p class="price">$250 / Year</p>
+                </div>
 
-                <ul>
-                    <li>Everything in Bronze</li>
-                    <li>Advertising Opportunities</li>
-                    <li>Event Sponsorship Access</li>
-                </ul>
+            </aside>
 
-                <button class="learn-more"
-                    data-modal="silver-modal">
-                    Learn More
-                </button>
-            </div>
+        </section>
 
-            <div class="membership-card">
-                <h3>Gold Membership</h3>
-                <p class="price">$500 / Year</p>
+        <dialog id="npModal">
 
-                <ul>
-                    <li>Everything in Silver</li>
-                    <li>Homepage Spotlight</li>
-                    <li>Premium Exposure</li>
-                </ul>
+            <h2>NP Membership Benefits</h2>
 
-                <button class="learn-more"
-                    data-modal="gold-modal">
-                    Learn More
-                </button>
-            </div>
+            <ul>
+                <li>Directory Listing</li>
+                <li>Networking Events</li>
+                <li>Community Participation</li>
+                <li>No Membership Fee</li>
+            </ul>
 
-        </div>
+            <button class="close-modal">
+                Close
+            </button>
 
-    </section>
+        </dialog>
 
-    <section class="join-form-section">
+        <dialog id="bronzeModal">
 
-        <div class="form-container">
+            <h2>Bronze Membership Benefits</h2>
 
-            <h2>Membership Application</h2>
+            <ul>
+                <li>Everything in NP</li>
+                <li>Business Workshops</li>
+                <li>Training Programs</li>
+                <li>Member Recognition</li>
+            </ul>
 
-            <form method="get" action="thankyou.html">
+            <button class="close-modal">
+                Close
+            </button>
 
-                <label>
-                    First Name
-                    <input type="text"
-                        name="firstName"
-                        required>
-                </label>
+        </dialog>
 
-                <label>
-                    Last Name
-                    <input type="text"
-                        name="lastName"
-                        required>
-                </label>
+        <dialog id="silverModal">
 
-                <label>
-                    Organizational Title
-                    <input type="text"
-                        name="orgTitle"
-                        pattern="[A-Za-z\\s\\-]{7,}">
-                </label>
+            <h2>Silver Membership Benefits</h2>
 
-                <label>
-                    Email Address
-                    <input type="email"
-                        name="email"
-                        required>
-                </label>
+            <ul>
+                <li>Everything in Bronze</li>
+                <li>Advertising Opportunities</li>
+                <li>Featured Promotions</li>
+                <li>Event Discounts</li>
+            </ul>
 
-                <label>
-                    Mobile Number
-                    <input type="tel"
-                        name="phone"
-                        required>
-                </label>
+            <button class="close-modal">
+                Close
+            </button>
 
-                <label>
-                    Business Name
-                    <input type="text"
-                        name="business"
-                        required>
-                </label>
+        </dialog>
 
-                <label>
-                    Membership Level
-                    <select name="membership">
-                        <option value="NP">NP Membership</option>
-                        <option value="Bronze">Bronze</option>
-                        <option value="Silver">Silver</option>
-                        <option value="Gold">Gold</option>
-                    </select>
-                </label>
+        <dialog id="goldModal">
 
-                <label>
-                    Business Description
-                    <textarea
-                        name="description"
-                        rows="5"></textarea>
-                </label>
+            <h2>Gold Membership Benefits</h2>
 
-                <input type="hidden"
-                    id="timestamp"
-                    name="timestamp">
+            <ul>
+                <li>Everything in Silver</li>
+                <li>Homepage Spotlight</li>
+                <li>Priority Sponsorship Access</li>
+                <li>Premium Business Visibility</li>
+            </ul>
 
-                <button type="submit">
-                    Submit Application
-                </button>
+            <button class="close-modal">
+                Close
+            </button>
 
-            </form>
+        </dialog>
 
-        </div>
-
-    </section>
-
-    <div class="modal" id="np-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>NP Membership</h3>
-            <p>Free membership designed for nonprofits and community organizations.</p>
-        </div>
-    </div>
-
-    <div class="modal" id="bronze-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Bronze Membership</h3>
-            <p>Includes workshops, training sessions, and networking events.</p>
-        </div>
-    </div>
-
-    <div class="modal" id="silver-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Silver Membership</h3>
-            <p>Additional advertising and promotional opportunities.</p>
-        </div>
-    </div>
-
-    <div class="modal" id="gold-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Gold Membership</h3>
-            <p>Maximum visibility, homepage spotlight, and premium chamber benefits.</p>
-        </div>
-    </div>
+    </main>
     <footer>
         <div class="socials">
             <a href="#" aria-label="LinkedIn">LinkedIn</a>

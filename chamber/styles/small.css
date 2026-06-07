@@ -453,329 +453,138 @@ main {
 }
 
 /*Join*/
-:root {
-    --primary: #00c2a8;
-    --secondary: #021b45;
-    --dark: #01122f;
-    --light: #ffffff;
-    --gray: #f4f7fb;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+.join-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-body {
-    font-family: "Segoe UI", sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background: #fff;
-}
-
-.join-hero {
-    min-height: 85vh;
-
-    background:
-        linear-gradient(
-            rgba(0, 14, 42, 0.85),
-            rgba(0, 14, 42, 0.85)
-        ),
-        url("../images/kumasi-business.jpg");
-
+.join-page-hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/join-hero.avif");
     background-size: cover;
     background-position: center;
-
-    display: flex;
-    align-items: center;
-}
-
-.hero-overlay {
-    width: 100%;
-}
-
-.hero-content {
-    max-width: 650px;
-    padding: 4rem 8%;
     color: white;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
-.hero-tag {
-    display: inline-block;
-    background: rgba(0, 194, 168, .15);
-    color: var(--primary);
-    padding: .7rem 1.2rem;
-    border-radius: 50px;
-    margin-bottom: 1.5rem;
-    border: 1px solid rgba(0,194,168,.3);
+.join-page-hero-content h1 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
 }
 
-.hero-content h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
+.join-page-tag {
+    background: #0057b8;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
 }
 
-.hero-content h1 span {
-    color: var(--primary);
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    max-width: 550px;
-    margin-bottom: 2rem;
-    color: #d9e2f0;
-}
-
-.hero-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: .7rem;
-
-    text-decoration: none;
-    background: var(--primary);
-    color: white;
-
-    padding: 1rem 2rem;
+.join-page-form-container {
+    background: #ffffff;
+    padding: 1rem;
     border-radius: 10px;
-
-    font-weight: 600;
-
-    transition: .3s;
 }
 
-.hero-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow);
+.join-page-membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.benefits {
-    padding: 5rem 8%;
-    text-align: center;
-}
-
-.benefits h2 {
-    font-size: 2.3rem;
-    color: var(--secondary);
-    margin-bottom: 3rem;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 2rem;
-}
-
-.benefit-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-
-    transition: .3s;
-}
-
-.benefit-card:hover {
-    transform: translateY(-10px);
-}
-
-.benefit-card i {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.benefit-card h3 {
-    margin-bottom: .8rem;
-}
-
-.memberships {
-    padding: 5rem 8%;
-    background: linear-gradient(
-        135deg,
-        var(--dark),
-        var(--secondary)
-    );
-
-    color: white;
-}
-
-.memberships h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.4rem;
-}
-
-.membership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 2rem;
-}
-
-.membership-card {
-    background: white;
-    color: #222;
-
-    border-radius: 20px;
-    padding: 2rem;
-
-    transition: .4s;
-    box-shadow: var(--shadow);
-}
-
-.membership-card:hover {
-    transform: translateY(-10px);
-}
-
-.featured {
-    border: 3px solid var(--primary);
-}
-
-.membership-card h3 {
-    margin-bottom: 1rem;
-    color: var(--secondary);
-}
-
-.price {
-    color: var(--primary);
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.membership-card ul {
-    list-style: none;
-    margin-bottom: 1.5rem;
-}
-
-.membership-card li {
-    margin-bottom: .8rem;
-}
-
-.learn-more {
-    width: 100%;
-    border: none;
-
-    background: var(--primary);
-    color: white;
-
-    padding: .9rem;
-    border-radius: 8px;
-
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.learn-more:hover {
-    opacity: .9;
-}
-
-.join-form-section {
-    background: #f8fafc;
-    padding: 5rem 8%;
-}
-
-.hero-content span, .hero-content h1{
-    color: white
-}
-
-.form-container {
-    max-width: 900px;
-    margin: auto;
-
-    background: white;
-    padding: 3rem;
-
-    border-radius: 20px;
-    box-shadow: var(--shadow);
-}
-
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--secondary);
-}
-
-form {
-    display: grid;
-    gap: 1.5rem;
-}
-
-label {
+.join-page-membership-form label {
     display: flex;
     flex-direction: column;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
-input,
-textarea,
-select {
-    margin-top: .5rem;
-
-    padding: 1rem;
-    border: 1px solid #d4d4d4;
-    border-radius: 8px;
-
+.join-page-membership-form input,
+.join-page-membership-form select,
+.join-page-membership-form textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1rem;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-    border-color: var(--primary);
-}
-
-form button {
-    background: var(--secondary);
+.join-page-submit-btn {
+    background: #0057b8;
     color: white;
-
     border: none;
-    padding: 1rem;
-
-    border-radius: 10px;
-
-    cursor: pointer;
+    padding: 0.8rem;
     font-size: 1rem;
-    font-weight: 600;
-
-    transition: .3s;
-}
-
-form button:hover {
-    background: var(--primary);
-}
-
-.modal {
-    display: none;
-
-    position: fixed;
-    inset: 0;
-
-    background: rgba(0,0,0,.7);
-
-    justify-content: center;
-    align-items: center;
-
-    z-index: 999;
-}
-
-.modal-content {
-    background: white;
-    width: 90%;
-    max-width: 500px;
-
-    padding: 2rem;
-    border-radius: 15px;
-
-    position: relative;
-
-    animation: popup .3s ease;
-}
-
-.close {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.5rem;
+}
+
+.join-page-membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-page-membership-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 5px solid #0057b8;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card-one { animation-delay: 0.1s; }
+.card-two { animation-delay: 0.2s; }
+.card-three { animation-delay: 0.3s; }
+.card-four { animation-delay: 0.4s; }
+
+.join-page-membership-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.join-page-modal-btn {
+    margin-top: 0.5rem;
+    background: #f1f1f1;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+dialog {
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    background: #0057b8;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes popup {
@@ -789,4 +598,40 @@ form button:hover {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* Thank you */
+.thankyou-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: #f4f6f9;
+}
+
+.thankyou-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.thankyou-details {
+    margin-top: 1.5rem;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.back-home-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background: #0057b8;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
 }

@@ -170,23 +170,72 @@
     }
 
     /*Join*/
-    .hero-content {
-        text-align: center;
-        padding: 3rem 1.5rem;
+    .join-page-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
     }
 
-    .hero-content h1 {
-        font-size: 2.7rem;
+    .join-page-hero {
+        padding: 5rem 2rem;
     }
 
-    .benefits,
-    .memberships,
-    .join-form-section {
-        padding: 4rem 1.5rem;
+    .join-page-hero-content h1 {
+        font-size: 2.5rem;
     }
 
-    .form-container {
+    .join-page-hero-content p {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .join-page-form-container {
         padding: 2rem;
+    }
+
+    .join-page-membership-form {
+        gap: 1.2rem;
+    }
+
+    .join-page-membership-form input,
+    .join-page-membership-form select,
+    .join-page-membership-form textarea {
+        font-size: 1rem;
+    }
+
+    .join-page-membership-cards {
+        position: sticky;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .join-page-membership-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .join-page-membership-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .join-page-submit-btn {
+        transition: background 0.3s ease;
+    }
+
+    .join-page-submit-btn:hover {
+        background: #003f88;
+    }
+
+    .join-page-modal-btn:hover {
+        background: #ddd;
+    }
+
+    .join-page {
+        padding: 2rem 3rem;
     }
 
 }
