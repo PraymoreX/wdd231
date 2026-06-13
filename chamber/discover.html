@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
 
@@ -34,96 +34,31 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./directory.html">Directory</a></li>
                 <li><a href="./join.html">Join</a></li>
-                <li><a href="./discover.html">Discover</a></li>
+                <li><a class="active" href="./directory.html">Discover</a></li>
 
             </ul>
             
         </nav>
     </div>
 </header>
+<main class="discover-page">
 
-<main class="home">
-    <section class="hero">
-        <picture>
-            <source srcset="images/hero-large.avif" media="(min-width: 768px)">
-            <source srcset="images/hero-small.avif" media="(max-width: 767px)">
-            <img src="images/hero-small.avif" alt="Kumasi business district" loading="lazy">
-        </picture>
-
-        <div class="hero-content">
-            <h1>Kumasi Chamber of Commerce</h1>
-            <p>
-                Connecting businesses, creating opportunities, and strengthening the local economy.
-            </p>
-
-            <a href="#" class="cta-btn">Join The Chamber</a>
-        </div>
+    <section class="discover-hero">
+        <h1>Discover Kumasi</h1>
+        <p>
+            Explore places that make Kumasi attractive for business,
+            tourism, and community growth.
+        </p>
     </section>
 
-    <section class="info-grid">
+    <div id="visitMessage" class="visit-message"></div>
 
-        <section class="events card">
-            <h2>Current Events</h2>
-
-            <div class="event-item">
-                <h3>Business Networking Summit</h3>
-                <p>
-                    Join local entrepreneurs and investors for an evening of networking,
-                    partnerships, and innovation discussions.
-                </p>
-            </div>
-
-            <div class="event-item">
-                <h3>Digital Skills Workshop</h3>
-                <p>
-                    Learn practical digital marketing and business growth strategies
-                    from experienced industry leaders.
-                </p>
-            </div>
-        </section>
-
-        <section class="weather card">
-            <h2>Weather</h2>
-
-            <div class="weather-main">
-                <p class="temperature">
-                    <span id="current-temp"></span>°C
-                </p>
-
-                <p id="weather-desc"></p>
-            </div>
-
-            <div class="forecast">
-                <div>
-                    <h3>Today</h3>
-                    <p id="day1"></p>
-                </div>
-
-                <div>
-                    <h3>Tomorrow</h3>
-                    <p id="day2"></p>
-                </div>
-
-                <div>
-                    <h3>Day 3</h3>
-                    <p id="day3"></p>
-                </div>
-            </div>
-        </section>
-
+    <section class="discover-grid" id="discoverGrid">
     </section>
 
-    <section class="spotlights">
-        <div class="section-heading">
-            <h2>Business Spotlights</h2>
-            <p>Supporting trusted businesses across Kumasi.</p>
-        </div>
-
-        <div id="spotlight-container" class="spotlight-grid"></div>
-    </section>
 </main>
 
 <footer>

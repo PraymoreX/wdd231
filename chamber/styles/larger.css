@@ -238,4 +238,87 @@
         padding: 2rem 3rem;
     }
 
+
+    /*Discover*/
+    .discover-page .discover-grid{
+        display:grid;
+        gap:1.2rem;
+        grid-template-columns:
+        1fr 1fr;
+        grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+
+    .discover-page .discover-card img:hover{
+        transform:scale(1.03);
+        filter:brightness(1.05);
+        transition:.3s;
+
+    }
+}
+
+/* LARGE VIEW of discover */
+@media screen and (min-width:1200px){
+    .discover-page .discover-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    /* REQUIRED: map each JS card to grid area */
+    .discover-page .card1 { grid-area: card1; }
+    .discover-page .card2 { grid-area: card2; }
+    .discover-page .card3 { grid-area: card3; }
+    .discover-page .card4 { grid-area: card4; }
+    .discover-page .card5 { grid-area: card5; }
+    .discover-page .card6 { grid-area: card6; }
+    .discover-page .card7 { grid-area: card7; }
+    .discover-page .card8 { grid-area: card8; }
+
+    /* Card consistency */
+    .discover-page .discover-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .discover-page .discover-card button {
+    margin-top: auto;
+    }
+    
+    .discover-page .discover-card h2 {
+    margin: 0;
+    }
+
+    .discover-page .discover-card p,
+    .discover-page .discover-card address {
+        margin: 0;
+    }
+
+    /* Fix image distortion */
+    .discover-page .discover-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Hover effect (desktop only) */
+    .discover-page .discover-card img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .discover-page .discover-card:hover img {
+        transform: scale(1.03);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+
 }

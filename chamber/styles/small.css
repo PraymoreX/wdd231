@@ -635,3 +635,76 @@ dialog::backdrop {
     text-decoration: none;
     border-radius: 5px;
 }
+
+/* Discover*/
+.discover-page{
+    padding:1rem;
+}
+
+.discover-hero{
+    text-align:center;
+    padding:2rem 1rem;
+
+}
+
+.visit-message{
+    background:#eef8ee;
+    padding:1rem;
+    border-left:5px solid green;
+    margin-bottom:2rem;
+    border-radius:10px;
+
+}
+
+.discover-grid{
+    display:grid;
+    gap:1rem;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card1{grid-area:card1;}
+.card2{grid-area:card2;}
+.card3{grid-area:card3;}
+.card4{grid-area:card4;}
+.card5{grid-area:card5;}
+.card6{grid-area:card6;}
+.card7{grid-area:card7;}
+.card8{grid-area:card8;}
+
+.discover-page .discover-card{
+    background:white;
+    border-radius:12px;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:.8rem;
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.discover-page img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+.discover-page button{
+    padding:.7rem;
+    border:none;
+    background:#0f5132;
+    color:white;
+    cursor:pointer;
+    border-radius:8px;
+
+}
